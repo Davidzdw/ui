@@ -1,8 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<!--Author: Ben Taylor
-	www.whitechord.org        -->
+<!--Author: Ben Taylor -->
 	<title>Nexus Web Audio Interfaces</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="initial-scale=1., user-scalable=no, width=device-width"/>
@@ -31,39 +30,6 @@
 
 </head>
 <body>
-
-
-	<script>
-
-
-		/*	examplehtmldial.on('*', function(data) {
-				var htmlstr = "<b>JavaScript output:</b> &nbsp;&nbsp;&nbsp;"
-							+ "{ value: "+data.value+" }<br>"
-							+ "<b>OSC output:</b> &nbsp;&nbsp;&nbsp;"
-							+ "/slider1 "+data.value+""
-				$("#demo1rcv").html(htmlstr);
-			})
-
-			demo4.col = 8
-			demo4.init()
-			demo4.matrix = [
-				[1,1,0,0],
-				[0,0,1,0],
-				[0,1,0,1],
-				[0,0,1,0],
-				[1,1,0,0],
-				[0,0,1,0],
-				[0,1,0,1],
-				[0,0,1,0]
-			]
-			demo4.sequence(180)
-
-
-		*/
-	</script>
-
-
-
 
 	<style>
 
@@ -319,21 +285,8 @@
 	      </p>
 
 	      <p class="overview">
-	    <!--    The toolkit offers the following:
-					<ul>
-						<li><b>Interfaces -</b> A collection of interfaces and audio visualization tools</li>
-						<li><b>Tuning -</b> A barebones timing API for creating repeating pulses using the web audio clock</li>
-						<li><b>Timing -</b> A tuning helper for translating scale indexes to frequency values</li>
-						<li><b>Generative Music Helpers -</b> Miscellaneous math functions for making generative music</li>
-					</ul> -->
 
 					In addition to interfaces, it offers a few helper methods for <b>tuning</b> and <b>timing</b>.
-				<!--	A <b>tuning</b> API lets you define your own scale and translate scale indexes to frequency values.
-					A barebones <b>timing</b> API for repeating pulses using the web audio clock
- 				-->
-
-				<!--	A <b>timing</b> helper is included to create
-					focuses on <b>interfaces</b>, <b>tuning</b>, and <b>timing</b>. -->
 
 					 It does not provide any sound-making capabilities –– for that, check out the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API" target="blank">Web Audio API</a> or web audio libraries such as <a href="http://tonejs.github.io" target="blank">Tone.js</a>, <a href="https://github.com/sebpiq/WebPd" target="blank">WebPD</a>, or <a href="https://github.com/charlieroberts/gibber.audio.lib" target="blank">Gibber.lib</a>.
 	      </p>
@@ -362,90 +315,6 @@
 
 
 		</div>
-
-<!--
-		<div class="row tutorialrow">
-
-			<div class="large-12 columns" style="margin:10px 0px 0px;">
-				<h3>
-					Complete List of Interfaces
-				</h3>
-
-				<br />
-				<a href="">Button</a>,
-				<a href="">Dial</a>,
-				<a href="">Number</a>,
-				<a href="">Position</a>,
-				<a href="">Slider</a>,
-				<a href="">Toggle</a>,
-
-				<a href="Envelope">Envelope</a>,
-				<a href="Multislider">Multislider</a>,
-				<a href="Piano">Piano</a>,
-				<a href="Radio Button">Radio Button</a>,
-				<a href="Select">Select</a>,
-				<a href="Sequencer">Sequencer</a>,
-				<a href="Text Button">Text Button</a>,
-
-				<a href="Tilt">Tilt</a>,
-
-				<a href="Tilt">Pan</a>,
-				<a href="Tilt">Pan2D</a>,
-
-				<a href="Tilt">Meter</a>,
-				<a href="Tilt">Oscilloscope</a>,
-				<a href="Tilt">Spectrogram</a>
-
-			</div>
-
-			<div class="large-4 columns">
-
-				<div class="smarttitle">Button</div>
-
-				<canvas nx="button" id="smart1" style="width:100px;height:100px;display:block;margin:30px auto"></canvas>
-
-			</div>
-			<div class="large-4 columns">
-
-
-				<div class="smarttitle">Envelope</div>
-
-				<canvas nx="envelope" id="smart3" style="width:300px;height:120px;display:block;margin:30px auto"></canvas>
-
-
-			</div>
-			<div class="large-4 columns codecolumn" style="position:relative">
-
-
-				<div class="smarttitle">Number</div>
-
-				<canvas nx="number" id="smart2" style="width:100px;height:40px;display:block;margin:30px auto"></canvas>
-
-
-			</div>
-		</div>
-
-		<div class="row tutorialrow" style="max-width:500px;margin:0 auto">
-
-			<div class="large-4 columns">
-
-				<div class="smarttitle">Tilt</div>
-
-				<canvas nx="tilt" id="smart4" style="width:100px;height:100px;display:block;margin:30px auto"></canvas>
-
-			</div>
-			<div class="large-4 columns">
-
-
-				<div class="smarttitle">Sequencer</div>
-
-				<canvas nx="matrix" id="smart5" style="width:240px;height:160px;display:block;margin:30px auto"></canvas>
-
-
-			</div>
-		</div>
-
--->
 
 	<div class="row">
 
@@ -635,31 +504,6 @@ beat.start();</code></pre>
   ga('send', 'pageview');
 
   </script>
-
-
-
-
-
-	<!-- UserVoice JavaScript SDK (only needed once on a page)
-	<script>(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/LXi9IjEXh5upmWEDNJLBtQ.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})()</script>
-
-	<!-- A tab to launch the Feedback Widget
-	<script>
-	UserVoice = window.UserVoice || [];
-	UserVoice.push(['showTab', 'classic_widget', {
-	  mode: 'feedback',
-	  primary_color: '#39a2e3',
-	  link_color: '#d4d4d4',
-	  forum_id: 211342,
-	  tab_label: 'Send Feedback',
-	  tab_color: '#76a4c9',
-	  tab_position: 'bottom-right',
-	  tab_inverted: false
-	}]);
-	</script>
-
--->
-
 
 </body>
 </html>
