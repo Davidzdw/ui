@@ -1523,7 +1523,9 @@ drunk.value = 500   // jumps to this value
   var Unformatted = {}
   var API = {}
   var Helpers = []
-  Nexus.context.close();
+  if (Nexus.context.close) {
+    Nexus.context.close();
+  }
   Nexus.context = Tone.context;
 
 
@@ -1602,7 +1604,7 @@ drunk.value = 500   // jumps to this value
       //get inherited members
       if (unformatted.augments) {
         for (var i=0; i<unformatted.augments.length;i++) {
-          let name = unformatted.augments[i].name
+          var name = unformatted.augments[i].name
           if (name != "EventEmitter") {
             members = members.concat(Unformatted[name].members.instance)
             if (Unformatted[name].augments) {
