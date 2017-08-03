@@ -476,7 +476,6 @@ dial.on('change',function(v) {
 -->
             <br /><br />
 
-            <div style="font-size:1.1em">
 
               First, create an element that will be the container of the rack.
               <br /><br />
@@ -486,8 +485,10 @@ dial.on('change',function(v) {
 <br /><br />
               In your JavaScript, use <b>new Nexus.Rack("#containerID")</b> to transform the container element into a rack. When this happens, any elements inside the container with valid <b>nexus-ui</b> attributes will be transformed into interface elements.
 
-              <p>
 
+              <h5>Using a Custom Attribute</h5>
+
+              <p>
                 Nexus.Rack optionally lets you specify which attribute to look for ('nexus-ui' by default). This is useful for using NexusUI with React, which requires <i>data-</i> attribute prefixes.
               </p>
 
@@ -515,7 +516,8 @@ dial.on('change',function(v) {
 
               <br /><br />
 
-              Rack methods:<br />
+              <h5>Rack Methods</h5>
+
               <b>.hide()</b><br />
               <b>.show()</b><br />
               <b>.colorize()</b> (See <a href="#colors">changing colors</a>)
